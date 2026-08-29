@@ -25,7 +25,6 @@
       "Koopa Troopa Beach",
       "DK Spaceport",
       "Peach Stadium",
-      "Ice Rally",
       "Choco Mountain",
       "Moo Moo Meadows"
     ]
@@ -185,7 +184,8 @@
       "Crown City",
       "Choco Mountain",
       "Cheep Cheep Falls",
-      "Faraway Oasis"
+      "Faraway Oasis",
+      "Rainbow Road"
     ]
   },
   {
@@ -379,7 +379,6 @@
     "name": "Rainbow Road",
     "img": "https://mario.wiki.gallery/images/thumb/2/25/MKWorld_Icon_Rainbow_Road.png/150px-MKWorld_Icon_Rainbow_Road.png",
     "connectors": [
-      "Peach Stadium"
     ]
   }
 ]
