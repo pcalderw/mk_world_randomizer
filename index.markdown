@@ -138,6 +138,7 @@ layout: home
   <!-- The rows will be injected here dynamically -->
   <tbody id="table-body"></tbody>
 </table>
+<p>History prevents getting the same course (or a connector from it) for 16 races. A connector map doesn't get saved to history.</p>
 
 <script>
     function renderHistoryFromStorage() {
