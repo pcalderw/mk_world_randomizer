@@ -1,0 +1,46 @@
+[
+  {
+    "id": "Mario Bros. Circuit",
+    "name": "Mario Bros. Circuit", 
+    "img": "https://mario.wiki.gallery/images/thumb/c/ca/MKWorld_Icon_Mario_Bros_Circuit.png/150px-MKWorld_Icon_Mario_Bros_Circuit.png",
+    "connectors": [
+      "Shy Guy Bazaar",
+      "DK Spaceport",
+      "Desert Hills",
+      "Crown City",
+      "Whistlestop Summit",
+      "Choco Mountain",
+      "Wario Stadium",
+      "Toad's Factory"
+    ]
+  },
+  {
+    "id": "Crown City",
+    "name": "Crown City", 
+    "img": "https://mario.wiki.gallery/images/thumb/e/e8/MKWorld_Icon_Crown_City.png/150px-MKWorld_Icon_Crown_City.png",
+    "connectors": [
+      "Mario Bros. Circuit",
+      "Desert Hills",
+      "Whistlestop Summit",
+      "Wario Stadium",
+      "Faraway Oasis",
+      "Koopa Troopa Beach",
+      "DK Spaceport",
+      "Peach Stadium",
+      "Choco Mountain",
+      "Moo Moo Meadows"
+    ]
+  },
+  {
+    "id": "Whistlestop Summit",
+    "name": "Whistletop", 
+    "img": "https://mario.wiki.gallery/images/thumb/9/98/MKWorld_Icon_Whistlestop_Summit.png/150px-MKWorld_Icon_Whistlestop_Summit.png",
+    "connectors": [
+      "Crown City",
+      "DK Spaceport",
+      "Desert Hills",
+      "Choco Mountain",
+      "Mario Bros. Circuit"
+    ]
+  }
+]

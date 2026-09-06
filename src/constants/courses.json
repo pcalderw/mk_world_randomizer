@@ -1,5 +1,6 @@
 [
   {
+    "id": "Mario Bros. Circuit",
     "name": "Mario Bros. Circuit",
     "img": "https://mario.wiki.gallery/images/thumb/c/ca/MKWorld_Icon_Mario_Bros_Circuit.png/150px-MKWorld_Icon_Mario_Bros_Circuit.png",
     "connectors": [
@@ -14,6 +15,7 @@
     ]
   },
   {
+    "id": "Crown City",
     "name": "Crown City",
     "img": "https://mario.wiki.gallery/images/thumb/e/e8/MKWorld_Icon_Crown_City.png/150px-MKWorld_Icon_Crown_City.png",
     "connectors": [
@@ -30,7 +32,8 @@
     ]
   },
   {
-    "name": "Whistlestop Summit",
+    "id": "Whistlestop Summit",
+    "name": "Whistletop",
     "img": "https://mario.wiki.gallery/images/thumb/9/98/MKWorld_Icon_Whistlestop_Summit.png/150px-MKWorld_Icon_Whistlestop_Summit.png",
     "connectors": [
       "Crown City",
@@ -41,15 +44,13 @@
     ]
   },
   {
+    "id": "DK Spaceport",
     "name": "DK Spaceport",
     "img": "https://mario.wiki.gallery/images/thumb/9/99/MKWorld_Icon_DK_Spaceport.png/150px-MKWorld_Icon_DK_Spaceport.png",
-    "connectors": [
-      "Whistlestop Summit",
-      "Koopa Troopa Beach",
-      "Crown City"
-    ]
+    "connectors": ["Whistlestop Summit", "Koopa Troopa Beach", "Crown City"]
   },
   {
+    "id": "Desert Hills",
     "name": "Desert Hills",
     "img": "https://mario.wiki.gallery/images/thumb/3/34/MKWorld_Icon_Desert_Hills.png/150px-MKWorld_Icon_Desert_Hills.png",
     "connectors": [
@@ -61,6 +62,7 @@
     ]
   },
   {
+    "id": "Shy Guy Bazaar",
     "name": "Shy Guy Bazaar",
     "img": "https://mario.wiki.gallery/images/thumb/0/03/MKWorld_Icon_Shy_Guy_Bazaar.png/150px-MKWorld_Icon_Shy_Guy_Bazaar.png",
     "connectors": [
@@ -72,7 +74,8 @@
     ]
   },
   {
-    "name": "Wario Stadium",
+    "id": "Wario Stadium",
+    "name": "Mario stadium",
     "img": "https://mario.wiki.gallery/images/thumb/f/f6/MKWorld_Icon_Wario_Stadium.png/150px-MKWorld_Icon_Wario_Stadium.png",
     "connectors": [
       "Shy Guy Bazaar",
@@ -86,6 +89,7 @@
     ]
   },
   {
+    "id": "Airship Fortress",
     "name": "Airship Fortress",
     "img": "https://mario.wiki.gallery/images/thumb/1/1f/MKWorld_Icon_Airship_Fortress.png/150px-MKWorld_Icon_Airship_Fortress.png",
     "connectors": [
@@ -97,6 +101,7 @@
     ]
   },
   {
+    "id": "DK Pass",
     "name": "DK Pass",
     "img": "https://mario.wiki.gallery/images/thumb/7/71/MKWorld_Icon_DK_Pass.png/150px-MKWorld_Icon_DK_Pass.png",
     "connectors": [
@@ -110,6 +115,7 @@
     ]
   },
   {
+    "id": "Starview Peak",
     "name": "Starview Peak",
     "img": "https://mario.wiki.gallery/images/thumb/a/a6/MKWorld_Icon_Starview_Peak.png/150px-MKWorld_Icon_Starview_Peak.png",
     "connectors": [
@@ -123,7 +129,8 @@
     ]
   },
   {
-    "name": "Sky-High Sundae",
+    "id": "Sky-High Sundae",
+    "name": "Skundae",
     "img": "https://mario.wiki.gallery/images/thumb/7/7e/MKWorld_Icon_Sky-High_Sundae.png/150px-MKWorld_Icon_Sky-High_Sundae.png",
     "connectors": [
       "Starview Peak",
@@ -133,7 +140,8 @@
     ]
   },
   {
-    "name": "Wario Shipyard",
+    "id": "Wario Shipyard",
+    "name": "Mario  Shipyard",
     "img": "https://mario.wiki.gallery/images/thumb/f/fc/MKWorld_Icon_Wario_Shipyard.png/150px-MKWorld_Icon_Wario_Shipyard.png",
     "connectors": [
       "Sky-High Sundae",
@@ -145,6 +153,7 @@
     ]
   },
   {
+    "id": "Koopa Troopa Beach",
     "name": "Koopa Troopa Beach",
     "img": "https://mario.wiki.gallery/images/thumb/3/31/MKWorld_Icon_Koopa_Troopa_Beach.png/150px-MKWorld_Icon_Koopa_Troopa_Beach.png",
     "connectors": [
@@ -159,6 +168,7 @@
     ]
   },
   {
+    "id": "Faraway Oasis",
     "name": "Faraway Oasis",
     "img": "https://mario.wiki.gallery/images/thumb/f/f6/MKWorld_Icon_Faraway_Oasis.png/150px-MKWorld_Icon_Faraway_Oasis.png",
     "connectors": [
@@ -173,7 +183,8 @@
     ]
   },
   {
-    "name": "Peach Stadium",
+    "id": "Peach Stadium",
+    "name": "🍑 Stadium",
     "img": "https://mario.wiki.gallery/images/thumb/f/fd/MKWorld_Icon_Peach_Stadium.png/150px-MKWorld_Icon_Peach_Stadium.png",
     "connectors": [
       "Mario Circuit",
@@ -189,7 +200,8 @@
     ]
   },
   {
-    "name": "Peach Beach",
+    "id": "Peach Beach",
+    "name": "🍑🏖️",
     "img": "https://mario.wiki.gallery/images/thumb/1/1a/MKWorld_Icon_Peach_Beach.png/150px-MKWorld_Icon_Peach_Beach.png",
     "connectors": [
       "Salty Salty Speedway",
@@ -200,6 +212,7 @@
     ]
   },
   {
+    "id": "Salty Salty Speedway",
     "name": "Salty Salty Speedway",
     "img": "https://mario.wiki.gallery/images/thumb/e/e0/MKWorld_Icon_Salty_Salty_Speedway.png/150px-MKWorld_Icon_Salty_Salty_Speedway.png",
     "connectors": [
@@ -214,7 +227,8 @@
     ]
   },
   {
-    "name": "Dino Dino Jungle",
+    "id": "Dino Dino Jungle",
+    "name": "Dinmosaurs",
     "img": "https://mario.wiki.gallery/images/thumb/5/51/MKWorld_Icon_Dino_Dino_Jungle.png/150px-MKWorld_Icon_Dino_Dino_Jungle.png",
     "connectors": [
       "Salty Salty Speedway",
@@ -225,6 +239,7 @@
     ]
   },
   {
+    "id": "Great ? Block Ruins",
     "name": "Great ? Block Ruins",
     "img": "https://mario.wiki.gallery/images/thumb/8/83/MKWorld_Icon_Great_Question_Block_Ruins.png/150px-MKWorld_Icon_Great_Question_Block_Ruins.png",
     "connectors": [
@@ -235,6 +250,7 @@
     ]
   },
   {
+    "id": "Cheep Cheep Falls",
     "name": "Cheep Cheep Falls",
     "img": "https://mario.wiki.gallery/images/thumb/0/01/MKWorld_Icon_Cheep_Cheep_Falls.png/150px-MKWorld_Icon_Cheep_Cheep_Falls.png",
     "connectors": [
@@ -251,6 +267,7 @@
     ]
   },
   {
+    "id": "Dandelion Depths",
     "name": "Dandelion Depths",
     "img": "https://mario.wiki.gallery/images/thumb/3/33/MKWorld_Icon_Dandelion_Depths.png/150px-MKWorld_Icon_Dandelion_Depths.png",
     "connectors": [
@@ -266,7 +283,8 @@
     ]
   },
   {
-    "name": "Boo Cinema",
+    "id": "Boo Cinema",
+    "name": "Boo-nema",
     "img": "https://mario.wiki.gallery/images/thumb/a/a8/MKWorld_Icon_Boo_Cinema.png/150px-MKWorld_Icon_Boo_Cinema.png",
     "connectors": [
       "Dandelion Depths",
@@ -277,6 +295,7 @@
     ]
   },
   {
+    "id": "Dry Bones Burnout",
     "name": "Dry Bones Burnout",
     "img": "https://mario.wiki.gallery/images/thumb/f/f7/MKWorld_Icon_Dry_Bones_Burnout.png/150px-MKWorld_Icon_Dry_Bones_Burnout.png",
     "connectors": [
@@ -291,7 +310,8 @@
     ]
   },
   {
-    "name": "Moo Moo Meadows",
+    "id": "Moo Moo Meadows",
+    "name": "Bitch imma cow",
     "img": "https://mario.wiki.gallery/images/thumb/e/eb/MKWorld_Icon_Moo_Moo_Meadows.png/150px-MKWorld_Icon_Moo_Moo_Meadows.png",
     "connectors": [
       "Choco Mountain",
@@ -306,6 +326,7 @@
     ]
   },
   {
+    "id": "Choco Mountain",
     "name": "Choco Mountain",
     "img": "https://mario.wiki.gallery/images/thumb/1/16/MKWorld_Icon_Choco_Mountain.png/150px-MKWorld_Icon_Choco_Mountain.png",
     "connectors": [
@@ -322,6 +343,7 @@
     ]
   },
   {
+    "id": "Toad's Factory",
     "name": "Toad's Factory",
     "img": "https://mario.wiki.gallery/images/thumb/2/2f/MKWorld_Icon_Toads_Factory.png/150px-MKWorld_Icon_Toads_Factory.png",
     "connectors": [
@@ -339,7 +361,8 @@
     ]
   },
   {
-    "name": "Bowser's Castle",
+    "id": "Bowser's Castle",
+    "name": "Gay Bowser's castle",
     "img": "https://mario.wiki.gallery/images/thumb/c/cc/MKWorld_Icon_Bowsers_Castle.png/150px-MKWorld_Icon_Bowsers_Castle.png",
     "connectors": [
       "Toad's Factory",
@@ -351,7 +374,8 @@
     ]
   },
   {
-    "name": "Acorn Heights",
+    "id": "Acorn Heights",
+    "name": "Acorn heights",
     "img": "https://mario.wiki.gallery/images/thumb/2/2a/MKWorld_Icon_Acorn_Heights.png/150px-MKWorld_Icon_Acorn_Heights.png",
     "connectors": [
       "Mario Circuit",
@@ -362,6 +386,7 @@
     ]
   },
   {
+    "id": "Mario Circuit",
     "name": "Mario Circuit",
     "img": "https://mario.wiki.gallery/images/thumb/3/31/MKWorld_Icon_Mario_Circuit.png/150px-MKWorld_Icon_Mario_Circuit.png",
     "connectors": [
@@ -376,9 +401,9 @@
     ]
   },
   {
-    "name": "Rainbow Road",
+    "id": "Rainbow Road",
+    "name": "🌈🛣️",
     "img": "https://mario.wiki.gallery/images/thumb/2/25/MKWorld_Icon_Rainbow_Road.png/150px-MKWorld_Icon_Rainbow_Road.png",
-    "connectors": [
-    ]
+    "connectors": []
   }
 ]

@@ -1,118 +1,207 @@
 [
   {
+    "id": "Standard Kart",
     "name": "Standard Kart",
     "img": "https://mario.wiki.gallery/images/thumb/a/af/MKWorld_Kart_Standard_Kart.png/150px-MKWorld_Kart_Standard_Kart.png"
   },
   {
+    "id": "Rally Kart",
     "name": "Rally Kart",
     "img": "https://mario.wiki.gallery/images/thumb/4/44/MKWorld_Kart_Rally_Kart.png/150px-MKWorld_Kart_Rally_Kart.png"
   },
   {
+    "id": "Plushbuggy",
     "name": "Plushbuggy",
     "img": "https://mario.wiki.gallery/images/thumb/2/26/MKWorld_Kart_Plushbuggy.png/150px-MKWorld_Kart_Plushbuggy.png"
   },
   {
+    "id": "Chargin' Truck",
+    "name": "Chargin' Truck",
+    "img": "https://mario.wiki.gallery/images/thumb/d/d4/MKWorld_Kart_Chargin_Truck.png/150px-MKWorld_Kart_Chargin_Truck.png"
+  },
+  {
+    "id": "Baby Blooper",
     "name": "Baby Blooper",
     "img": "https://mario.wiki.gallery/images/thumb/7/71/MKWorld_Kart_Baby_Blooper.png/150px-MKWorld_Kart_Baby_Blooper.png"
   },
   {
+    "id": "Zoom Buggy",
     "name": "Zoom Buggy",
     "img": "https://mario.wiki.gallery/images/thumb/1/1c/MKWorld_Kart_Zoom_Buggy.png/150px-MKWorld_Kart_Zoom_Buggy.png"
   },
   {
+    "id": "Hot Rod",
     "name": "Hot Rod",
     "img": "https://mario.wiki.gallery/images/thumb/6/63/MKWorld_Kart_Hot_Rod.png/150px-MKWorld_Kart_Hot_Rod.png"
   },
   {
-    "name": "Ribbit Revster",
+    "id": "Ribbit Revster",
+    "name": "Wibbit Wevster",
     "img": "https://mario.wiki.gallery/images/thumb/9/99/MKWorld_Kart_Ribbit_Revster.png/150px-MKWorld_Kart_Ribbit_Revster.png"
   },
   {
+    "id": "Roadster Royale",
     "name": "Roadster Royale",
     "img": "https://mario.wiki.gallery/images/thumb/b/be/MKWorld_Kart_Roadster_Royale.png/150px-MKWorld_Kart_Roadster_Royale.png"
   },
   {
-    "name": "Bowser Bruiser",
+    "id": "Bowser Bruiser",
+    "name": "Gay Bowsers Bruiser",
     "img": "https://mario.wiki.gallery/images/thumb/5/51/MKWorld_Kart_Bowser_Bruiser.png/150px-MKWorld_Kart_Bowser_Bruiser.png"
   },
   {
-    "name": "Reel Racer",
+    "id": "Reel Racer",
+    "name": "Real Racist",
     "img": "https://mario.wiki.gallery/images/thumb/a/aa/MKWorld_Kart_Reel_Racer.png/150px-MKWorld_Kart_Reel_Racer.png"
   },
   {
+    "id": "Carpet Flyer",
     "name": "Carpet Flyer",
     "img": "https://mario.wiki.gallery/images/thumb/0/0d/MKWorld_Kart_Carpet_Flyer.png/150px-MKWorld_Kart_Carpet_Flyer.png"
   },
   {
-    "name": "Big Horn",
+    "id": "Big Horn",
+    "name": "Big Horn on his Hip",
     "img": "https://mario.wiki.gallery/images/thumb/b/bd/MKWorld_Kart_Big_Horn.png/150px-MKWorld_Kart_Big_Horn.png"
   },
   {
-    "name": "Billdozer",
+    "id": "Billdozer",
+    "name": "Billhardlydozer",
     "img": "https://mario.wiki.gallery/images/thumb/5/58/MKWorld_Kart_Billdozer.png/150px-MKWorld_Kart_Billdozer.png"
   },
   {
+    "id": "Standard Bike",
     "name": "Standard Bike",
     "img": "https://mario.wiki.gallery/images/thumb/d/d7/MKWorld_Bike_Standard_Bike.png/150px-MKWorld_Bike_Standard_Bike.png"
   },
   {
+    "id": "Rally Bike",
     "name": "Rally Bike",
     "img": "https://mario.wiki.gallery/images/thumb/f/f8/MKWorld_Bike_Rally_Bike.png/150px-MKWorld_Bike_Rally_Bike.png"
   },
   {
+    "id": "Cute Scoot",
     "name": "Cute Scoot",
     "img": "https://mario.wiki.gallery/images/thumb/3/3c/MKWorld_Bike_Cute_Scoot.png/150px-MKWorld_Bike_Cute_Scoot.png"
   },
   {
+    "id": "Mach Rocket",
     "name": "Mach Rocket",
     "img": "https://mario.wiki.gallery/images/thumb/8/89/MKWorld_Bike_Mach_Rocket.png/150px-MKWorld_Bike_Mach_Rocket.png"
   },
   {
+    "id": "Hyper Pipe",
     "name": "Hyper Pipe",
     "img": "https://mario.wiki.gallery/images/thumb/0/0e/MKWorld_Bike_Hyper_Pipe.png/150px-MKWorld_Bike_Hyper_Pipe.png"
   },
   {
+    "id": "Tune Thumper",
     "name": "Tune Thumper",
     "img": "https://mario.wiki.gallery/images/thumb/e/e9/MKWorld_Bike_Tune_Thumper.png/150px-MKWorld_Bike_Tune_Thumper.png"
   },
   {
-    "name": "Fin Twin",
+    "id": "Fin Twin",
+    "name": "Start Diggin in yo Fin Twin",
     "img": "https://mario.wiki.gallery/images/thumb/b/b0/MKWorld_Bike_Fin_Twin.png/150px-MKWorld_Bike_Fin_Twin.png"
   },
   {
-    "name": "Loco Moto",
+    "id": "Loco Moto",
+    "name": "Moto Moto likes you Bike",
     "img": "https://mario.wiki.gallery/images/thumb/b/b7/MKWorld_Bike_Loco_Moto.png/150px-MKWorld_Bike_Loco_Moto.png"
   },
   {
-    "name": "Funky Dorrie",
+    "id": "Funky Dorrie",
+    "name": "Funky Dorrie Jet Ski",
     "img": "https://mario.wiki.gallery/images/thumb/3/35/MKWorld_Trike_Funky_Dorrie.png/150px-MKWorld_Trike_Funky_Dorrie.png"
   },
   {
+    "id": "Junkyard Hog",
     "name": "Junkyard Hog",
     "img": "https://mario.wiki.gallery/images/thumb/b/b3/MKWorld_Trike_Junkyard_Hog.png/150px-MKWorld_Trike_Junkyard_Hog.png"
   },
   {
-    "name": "Lobster Roller",
+    "id": "Lobster Roller",
+    "name": "Maine Lobster Roll",
     "img": "https://mario.wiki.gallery/images/thumb/3/36/MKWorld_Trike_Lobster_Roller.png/150px-MKWorld_Trike_Lobster_Roller.png"
   },
   {
-    "name": "Blastronaut III",
+    "id": "Blastronaut III",
+    "name": "Asstronaut 3",
     "img": "https://mario.wiki.gallery/images/thumb/6/6d/MKWorld_Trike_Blastronaut_III.png/150px-MKWorld_Trike_Blastronaut_III.png"
   },
   {
+    "id": "Mecha Trike",
     "name": "Mecha Trike",
     "img": "https://mario.wiki.gallery/images/thumb/9/90/MKWorld_Trike_Mecha_Trike.png/150px-MKWorld_Trike_Mecha_Trike.png"
   },
   {
+    "id": "Rallygator",
     "name": "Rallygator",
     "img": "https://mario.wiki.gallery/images/thumb/1/13/MKWorld_Trike_Rallygator.png/150px-MKWorld_Trike_Rallygator.png"
   },
   {
+    "id": "Dread Sled",
     "name": "Dread Sled",
     "img": "https://mario.wiki.gallery/images/thumb/4/48/MKWorld_Mobile_Dread_Sled.png/150px-MKWorld_Mobile_Dread_Sled.png"
   },
   {
-    "name": "Stellar Sled",
+    "id": "Stellar Sled",
+    "name": "Stellar Sleder",
     "img": "https://mario.wiki.gallery/images/thumb/c/c4/MKWorld_Mobile_Stellar_Sled.png/150px-MKWorld_Mobile_Stellar_Sled.png"
+  },
+  {
+    "id": "W-Twin Chopper",
+    "name": "M-Twin Chopper",
+    "img": "https://mario.wiki.gallery/images/thumb/2/2c/MKWorld_Bike_W-Twin_Chopper.png/150px-MKWorld_Bike_W-Twin_Chopper.png"
+  },
+  {
+    "id": "Tiny Titan",
+    "name": "Tiny Titan",
+    "img": "https://mario.wiki.gallery/images/thumb/7/7c/MKWorld_Kart_Tiny_Titan.png/150px-MKWorld_Kart_Tiny_Titan.png"
+  },
+  {
+    "id": "R.O.B. H.O.G.",
+    "name": "R.O.B. H.O.G.",
+    "img": "https://mario.wiki.gallery/images/thumb/a/a1/MKWorld_Bike_ROB_HOG_Famicom.png/150px-MKWorld_Bike_ROB_HOG_Famicom.png"
+  },
+  {
+    "id": "Dolphin Dasher",
+    "name": "Dolphin Bike",
+    "img": "https://mario.wiki.gallery/images/thumb/d/d8/MKWorld_Bike_Dolphin_Dasher.png/150px-MKWorld_Bike_Dolphin_Dasher.png"
+  },
+  {
+    "id": "Li'l Dumpy",
+    "name": "Big Dumpy",
+    "img": "https://mario.wiki.gallery/images/thumb/5/5c/MKWorld_Kart_Li%27l_Dumpy.png/150px-MKWorld_Kart_Li%27l_Dumpy.png"
+  },
+  {
+    "id": "Li'l Dumpy",
+    "name": "Big Dumpy",
+    "img": "https://mario.wiki.gallery/images/thumb/5/5c/MKWorld_Kart_Li%27l_Dumpy.png/150px-MKWorld_Kart_Li%27l_Dumpy.png"
+  },
+  {
+    "id": "Pipe Frame",
+    "name": "Pipe Frame",
+    "img": "https://mario.wiki.gallery/images/thumb/e/e5/MKWorld_Kart_Pipe_Frame.png/150px-MKWorld_Kart_Pipe_Frame.png"
+  },
+  {
+    "id": "Bumble V",
+    "name": "🐝 V",
+    "img": "https://mario.wiki.gallery/images/thumb/7/73/MKWorld_Kart_Bumble_V.png/150px-MKWorld_Kart_Bumble_V.png"
+  },
+  {
+    "id": "B Dasher",
+    "name": "B Dasher",
+    "img": "https://mario.wiki.gallery/images/thumb/e/e0/MKWorld_Kart_B_Dasher.png/150px-MKWorld_Kart_B_Dasher.png"
+  },
+  {
+    "id": "Biddybuggy",
+    "name": "Biddybuggy",
+    "img": "https://mario.wiki.gallery/images/thumb/d/db/MKWorld_Kart_Biddybuggy.png/150px-MKWorld_Kart_Biddybuggy.png"
+  },
+  {
+    "id": "Cloud 9",
+    "name": "Cloud 9",
+    "img": "https://mario.wiki.gallery/images/thumb/4/4f/MKWorld_Kart_Cloud_9.png/150px-MKWorld_Kart_Cloud_9.png"
   }
 ]

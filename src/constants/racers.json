@@ -1,0 +1,252 @@
+[
+  {
+    "id": "Mario",
+    "name": "Mario",
+    "img": "https://mario.wiki.gallery/images/thumb/5/51/MarioMKworld.png/100px-MarioMKworld.png"
+  },
+  {
+    "id": "Luigi",
+    "name": "Green Mario",
+    "img": "https://mario.wiki.gallery/images/thumb/b/b5/LuigiMKworld.png/100px-LuigiMKworld.png"
+  },
+  {
+    "id": "Peach",
+    "name": "Peach",
+    "img": "https://mario.wiki.gallery/images/thumb/a/a1/PeachMKworld.png/100px-PeachMKworld.png"
+  },
+  {
+    "id": "Yoshi",
+    "name": "Yoshi",
+    "img": "https://mario.wiki.gallery/images/thumb/c/c9/YoshiMKworld.png/100px-YoshiMKworld.png"
+  },
+  {
+    "id": "Toad",
+    "name": "Toad",
+    "img": "https://mario.wiki.gallery/images/thumb/8/81/ToadMKworld.png/100px-ToadMKworld.png"
+  },
+  {
+    "id": "Koopa Troopa",
+    "name": "Koopa Troopa",
+    "img": "https://mario.wiki.gallery/images/thumb/4/4e/KoopaMKworld.png/100px-KoopaMKworld.png"
+  },
+  {
+    "id": "Bowser",
+    "name": "Gay Bowser",
+    "img": "https://mario.wiki.gallery/images/thumb/a/af/BowserMKworld.png/100px-BowserMKworld.png"
+  },
+  {
+    "id": "Wario",
+    "name": "Fat Mario",
+    "img": "https://mario.wiki.gallery/images/thumb/3/3d/WarioMKworld.png/100px-WarioMKworld.png"
+  },
+  {
+    "id": "Waluigi",
+    "name": "Tall Mario",
+    "img": "https://mario.wiki.gallery/images/thumb/5/52/WaluigiMKworld.png/100px-WaluigiMKworld.png"
+  },
+  {
+    "id": "Pauline",
+    "name": "Pauline",
+    "img": "https://mario.wiki.gallery/images/thumb/d/d7/PaulineMKworld.png/100px-PaulineMKworld.png"
+  },
+  {
+    "id": "Baby Mario",
+    "name": "Baby Mario",
+    "img": "https://mario.wiki.gallery/images/thumb/0/0b/Babymariomkworld.png/100px-Babymariomkworld.png"
+  },
+  {
+    "id": "Baby Luigi",
+    "name": "Baby Green Mario",
+    "img": "https://mario.wiki.gallery/images/thumb/a/af/Babyluigimkworld.png/100px-Babyluigimkworld.png"
+  },
+  {
+    "id": "Baby Peach",
+    "name": "Baby Peach",
+    "img": "https://mario.wiki.gallery/images/thumb/8/82/Babypeachmkworld.png/100px-Babypeachmkworld.png"
+  },
+  {
+    "id": "Baby Daisy",
+    "name": "Baby Daisy",
+    "img": "https://mario.wiki.gallery/images/thumb/d/d5/Babydaisymkworld.png/100px-Babydaisymkworld.png"
+  },
+  {
+    "id": "Toadette",
+    "name": "Toadette",
+    "img": "https://mario.wiki.gallery/images/thumb/6/6f/Toadettemkworld.png/100px-Toadettemkworld.png"
+  },
+  {
+    "id": "Baby Rosalina",
+    "name": "Baby Rosalina",
+    "img": "https://mario.wiki.gallery/images/thumb/a/aa/Babyrosalinamkworld.png/100px-Babyrosalinamkworld.png"
+  },
+  {
+    "id": "Shy Guy",
+    "name": "Shy Guy",
+    "img": "https://mario.wiki.gallery/images/thumb/e/ea/Shyguymkworld.png/100px-Shyguymkworld.png"
+  },
+  {
+    "id": "Nabbit",
+    "name": "Nabbit",
+    "img": "https://mario.wiki.gallery/images/thumb/4/4d/Nabbitmkworld.png/100px-Nabbitmkworld.png"
+  },
+  {
+    "id": "Piranha Plant",
+    "name": "Piranha Plant",
+    "img": "https://mario.wiki.gallery/images/thumb/b/b1/MKWorld_Piranha_Plant_Racer.png/100px-MKWorld_Piranha_Plant_Racer.png"
+  },
+  {
+    "id": "Hammer Bro",
+    "name": "Hammer Bro",
+    "img": "https://mario.wiki.gallery/images/thumb/8/8a/Hammerbromkworld.png/100px-Hammerbromkworld.png"
+  },
+  {
+    "id": "Monty Mole",
+    "name": "Monty Mole",
+    "img": "https://mario.wiki.gallery/images/thumb/9/95/Montymolemkworld.png/100px-Montymolemkworld.png"
+  },
+  {
+    "id": "Goomba",
+    "name": "Goomba",
+    "img": "https://mario.wiki.gallery/images/thumb/a/a6/MKworld_Goomba.png/100px-MKworld_Goomba.png"
+  },
+  {
+    "id": "Sidestepper",
+    "name": "Sidestepper",
+    "img": "https://mario.wiki.gallery/images/thumb/3/33/Mario_Kart_World_Sidestepper.png/100px-Mario_Kart_World_Sidestepper.png"
+  },
+  {
+    "id": "Cheep Cheep",
+    "name": "Cheep Cheep",
+    "img": "https://mario.wiki.gallery/images/thumb/2/29/Mario_Kart_World_Cheep_Cheep.png/100px-Mario_Kart_World_Cheep_Cheep.png"
+  },
+  {
+    "id": "Dry Bones",
+    "name": "Dry Bones",
+    "img": "https://mario.wiki.gallery/images/thumb/d/d3/MK_NS2_Dry_Bones.png/100px-MK_NS2_Dry_Bones.png"
+  },
+  {
+    "id": "Wiggler",
+    "name": "Wiggle Boy",
+    "img": "https://mario.wiki.gallery/images/thumb/9/93/MKWorld_Wiggler.png/100px-MKWorld_Wiggler.png"
+  },
+  {
+    "id": "Pokey",
+    "name": "Pokey",
+    "img": "https://mario.wiki.gallery/images/thumb/f/fc/Pokey_MKWorld_Select.png/100px-Pokey_MKWorld_Select.png"
+  },
+  {
+    "id": "Cow",
+    "name": "Cow",
+    "img": "https://mario.wiki.gallery/images/thumb/f/f4/Cow_MKWorld_Select.png/100px-Cow_MKWorld_Select.png"
+  },
+  {
+    "id": "Stingby",
+    "name": "Stingby",
+    "img": "https://mario.wiki.gallery/images/thumb/5/50/Stingby_MKWorld_Select.png/100px-Stingby_MKWorld_Select.png"
+  },
+  {
+    "id": "Snowman",
+    "name": "Snowman",
+    "img": "https://mario.wiki.gallery/images/thumb/8/8e/SnowmanSelect.png/100px-SnowmanSelect.png"
+  },
+  {
+    "id": "Penguin",
+    "name": "Penguin",
+    "img": "https://mario.wiki.gallery/images/thumb/9/90/PenguinSelect.png/100px-PenguinSelect.png"
+  },
+  {
+    "id": "Para-Biddybud",
+    "name": "Para-Biddybud",
+    "img": "https://mario.wiki.gallery/images/thumb/9/90/Bbmkworld.png/100px-Bbmkworld.png"
+  },
+  {
+    "id": "Daisy",
+    "name": "Daisy",
+    "img": "https://mario.wiki.gallery/images/thumb/c/cc/DaisyMKworld.png/100px-DaisyMKworld.png"
+  },
+  {
+    "id": "Rosalina",
+    "name": "Rosalina",
+    "img": "https://mario.wiki.gallery/images/thumb/0/06/RosalinaMKworld.png/100px-RosalinaMKworld.png"
+  },
+  {
+    "id": "Lakitu",
+    "name": "Hitler",
+    "img": "https://mario.wiki.gallery/images/thumb/2/23/Lakitumkworld.png/100px-Lakitumkworld.png"
+  },
+  {
+    "id": "Bowser Jr.",
+    "name": "Bowser Jr.",
+    "img": "https://mario.wiki.gallery/images/thumb/7/79/Bowserjrmkworld.png/100px-Bowserjrmkworld.png"
+  },
+  {
+    "id": "Birdo",
+    "name": "Birdo",
+    "img": "https://mario.wiki.gallery/images/thumb/1/12/Birdomkworld.png/100px-Birdomkworld.png"
+  },
+  {
+    "id": "King Boo",
+    "name": "King Boo",
+    "img": "https://mario.wiki.gallery/images/thumb/8/80/Kingboomkworld.png/100px-Kingboomkworld.png"
+  },
+  {
+    "id": "Donkey Kong",
+    "name": "Donkey Kong",
+    "img": "https://mario.wiki.gallery/images/thumb/3/31/Dkmkworld.png/100px-Dkmkworld.png"
+  },
+  {
+    "id": "Spike",
+    "name": "Spike",
+    "img": "https://mario.wiki.gallery/images/thumb/4/4d/Spikemkworld.png/100px-Spikemkworld.png"
+  },
+  {
+    "id": "Cataquack",
+    "name": "Cataquack",
+    "img": "https://mario.wiki.gallery/images/thumb/6/6b/Cataquackmkworld.png/100px-Cataquackmkworld.png"
+  },
+  {
+    "id": "Pianta",
+    "name": "Pianta",
+    "img": "https://mario.wiki.gallery/images/thumb/2/2f/Mario_Kart_World_Pianta.png/100px-Mario_Kart_World_Pianta.png"
+  },
+  {
+    "id": "Rocky Wrench",
+    "name": "Rocky Wrench",
+    "img": "https://mario.wiki.gallery/images/thumb/e/e9/Mario_Kart_World_Rocky_Wrench.png/100px-Mario_Kart_World_Rocky_Wrench.png"
+  },
+  {
+    "id": "Conkdor",
+    "name": "Conkdor",
+    "img": "https://mario.wiki.gallery/images/thumb/2/22/MKWorld_Conkdor_icon.png/100px-MKWorld_Conkdor_icon.png"
+  },
+  {
+    "id": "Peepa",
+    "name": "Peeper",
+    "img": "https://mario.wiki.gallery/images/thumb/4/42/Peepa_MKWorld_Select.png/100px-Peepa_MKWorld_Select.png"
+  },
+  {
+    "id": "Swoop",
+    "name": "Swoop",
+    "img": "https://mario.wiki.gallery/images/thumb/2/27/Swoop_MKWorld_Select.png/100px-Swoop_MKWorld_Select.png"
+  },
+  {
+    "id": "Fish Bone",
+    "name": "Fish Bone",
+    "img": "https://mario.wiki.gallery/images/thumb/4/4a/MKWorld_Fishbone_Select.png/100px-MKWorld_Fishbone_Select.png"
+  },
+  {
+    "id": "Coin Coffer",
+    "name": "Coin Coffer",
+    "img": "https://mario.wiki.gallery/images/thumb/2/2c/Coin_Coffer_MKWorld_Select.png/100px-Coin_Coffer_MKWorld_Select.png"
+  },
+  {
+    "id": "Dolphin",
+    "name": "Dolphin",
+    "img": "https://mario.wiki.gallery/images/thumb/6/69/Dolphin_MKWorld_Select.png/100px-Dolphin_MKWorld_Select.png"
+  },
+  {
+    "id": "Chargin' Chuck",
+    "name": "Chargin' Chuck",
+    "img": "https://mario.wiki.gallery/images/thumb/2/21/Chargin%27_Chuck_MKWorld_Select.png/100px-Chargin%27_Chuck_MKWorld_Select.png"
+  }
+]

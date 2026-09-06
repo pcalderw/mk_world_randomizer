@@ -1,0 +1,12 @@
+[
+    {
+        "id":"Mario",
+        "name":"Mario",
+        "img":"https://mario.wiki.gallery/images/thumb/5/51/MarioMKworld.png/100px-MarioMKworld.png"
+    },
+    {
+        "id":"Baby Luigi",
+        "name":"Baby Green Mario",
+        "img":"https://mario.wiki.gallery/images/thumb/a/af/Babyluigimkworld.png/100px-Babyluigimkworld.png"
+    }
+]

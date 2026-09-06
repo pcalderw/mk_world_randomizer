@@ -1,0 +1,47 @@
+{
+  "name": "mk_world_randomizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:react": "vite build",
+    "build:jekyll": "bundle exec jekyll build",
+    "build": "npm run build:react && npm run build:jekyll",
+    "serve": "concurrently \"vite build --watch\" \"bundle exec jekyll serve\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pcalderw/mk_world_randomizer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/pcalderw/mk_world_randomizer/issues"
+  },
+  "homepage": "https://github.com/pcalderw/mk_world_randomizer#readme",
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@mui/icons-material": "^9.4.0",
+    "@mui/material": "^9.4.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@eslint/css": "^2.0.0",
+    "@eslint/json": "^2.1.0",
+    "@eslint/markdown": "^8.0.3",
+    "@vitejs/plugin-react": "^6.1.1",
+    "concurrently": "^10.0.5",
+    "eslint": "^9.39.5",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react": "^7.37.5",
+    "globals": "^17.12.0",
+    "prettier": "^3.9.6",
+    "prettier-eslint": "^17.1.2",
+    "vite": "^8.2.2"
+  }
+}

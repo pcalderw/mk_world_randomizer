@@ -26,7 +26,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 
@@ -55,3 +55,9 @@ header_pages:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+exclude:
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - vite.config.js
+  - src/
