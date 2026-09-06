@@ -21,7 +21,7 @@
 title: Mario Kart World Randomizer
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Custom Mario Kart World randomizer with history. 
+  Custom Mario Kart World randomizer with history.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -30,9 +30,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 plugins:
   - jekyll-feed
 
-domain: pcalderw.github.io       # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
-url: https://pcalderw.github.io  # the base hostname and protocol for your site, e.g. http://example.com
-baseurl: /mk_world_randomizer/      # place folder name if the site is served in a subfolder
+domain: pcalderw.github.io # if you want to force HTTPS, specify the domain without the http at the start, e.g. example.com
+url: https://pcalderw.github.io # the base hostname and protocol for your site, e.g. http://example.com
+baseurl: /mk_world_randomizer/ # place folder name if the site is served in a subfolder
 
 header_pages:
   # None
@@ -56,6 +56,8 @@ header_pages:
 #   - vendor/gems/
 #   - vendor/ruby/
 exclude:
+  - vendor
+  - vendor/bundle
   - node_modules/
   - package.json
   - package-lock.json
