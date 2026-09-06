@@ -2,7 +2,7 @@ name: Deploy React-Jekyll Site to Pages
 
 on:
   push:
-    branches: ["main"] # Change to your default branch name
+    branches: ["main"]
 
 permissions:
   contents: read
@@ -15,7 +15,7 @@ concurrency:
 
 jobs:
   build:
-    runs-level: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
