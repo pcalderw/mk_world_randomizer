@@ -293,11 +293,17 @@ const DiagonalSplitImage = ({ topCourse, bottomCourse }) => {
         overflow: "hidden",
       }}
     >
-      <img src={topCourse.img} alt={topCourse.name} style={topImageStyle} />
+      <img
+        src={topCourse.img}
+        alt={topCourse.name}
+        style={topImageStyle}
+        className="top-image"
+      />
       <img
         src={bottomCourse.img}
         alt={bottomCourse.name}
         style={bottomImageStyle}
+        className="bottom-image"
       />
       <svg style={svgOverlayStyle} xmlns="http://w3.org">
         <line
