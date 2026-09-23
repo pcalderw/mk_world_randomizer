@@ -1,14 +1,5 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  <script src="https://cdn.jsdelivr.net/npm/idb@8/build/umd.js"></script>
-  <script type="module" src="{{ '/assets/js/repo.js' | relative_url }}"></script>
-  <script>
-    window.mkw = {
-      'courses': {{ site.data.courses | jsonify }},
-      'karts': {{ site.data.karts | jsonify }}
-    }
-  </script>
-
   {%- include head.html -%}
 
 
