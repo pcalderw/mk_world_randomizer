@@ -9,13 +9,49 @@ import {
 class TournamentManager {
   #repo = new CourseRepo();
   #currentTournament = null;
+  #pendingResume = null;
+  #pendingNumPlayers = null;
   #listeners = new Set();
 
   // Might want to allow num races in tournament to be configurable but for now UI will assume 4
   begin(numPlayers) {
-    if (this.#tryResume()) {
-      return this.#currentTournament;
+    if (this.#currentTournament != null || this.#pendingResume != null) {
+      return;
     }
+    const saved = this.#repo.getInProgress();
+    if (saved != null && !saved.isEnded) {
+      this.#pendingResume = saved;
+      this.#pendingNumPlayers = numPlayers;
+      this.#updateSubscribers();
+      return;
+    }
+    this.#startNew(numPlayers);
+  }
+
+  // Called once the player has decided whether to resume the tournament found on load.
+  resumePending() {
+    if (this.#pendingResume == null) {
+      return;
+    }
+    this.#currentTournament = this.#pendingResume;
+    this.#pendingResume = null;
+    this.#pendingNumPlayers = null;
+    this.#updateSubscribers();
+  }
+
+  discardPending() {
+    const numPlayers = this.#pendingNumPlayers ?? this.#pendingResume?.numPlayers;
+    this.#pendingResume = null;
+    this.#pendingNumPlayers = null;
+    this.#repo.clearInProgress();
+    this.#startNew(numPlayers);
+  }
+
+  getPendingResume() {
+    return this.#pendingResume;
+  }
+
+  #startNew(numPlayers) {
     this.#currentTournament = {
       numPlayers: numPlayers,
       startTs: Date.now(),
@@ -27,15 +63,6 @@ class TournamentManager {
       isEnded: false,
     };
     this.#updateSubscribers();
-  }
-
-  #tryResume() {
-    const saved = this.#repo.getInProgress();
-    if (saved == null || saved.isEnded) {
-      return false;
-    }
-    this.#currentTournament = saved;
-    return true;
   }
 
   reset(numPlayers) {
@@ -171,8 +198,10 @@ class TournamentManager {
   }
 
   #updateSubscribers() {
-    this.#currentTournament = { ...this.#currentTournament };
-    this.#repo.saveInProgress(this.#currentTournament);
+    if (this.#currentTournament != null) {
+      this.#currentTournament = { ...this.#currentTournament };
+      this.#repo.saveInProgress(this.#currentTournament);
+    }
     this.#listeners.forEach((listener) => listener());
   }
 
