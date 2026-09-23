@@ -3,7 +3,9 @@ const PRESENTED_HISTORY_KEY = "mkw_presented_courses";
 const RECENT_HISTORY_KEY = "mkw_recent_courses";
 const ONGOING_TOURNAMENT_KEY = "mkw_inprogress_courses";
 const LAST_NUM_PLAYERS_KEY = "mkw_last_num_players";
+const TOURNAMENT_HISTORY_KEY = "mkw_tournament_history";
 const RECENT_HISTORY_LIMIT = 15;
+const TOURNAMENT_HISTORY_LIMIT = 50;
 
 export class CourseRepo {
   getHistory() {
@@ -51,6 +53,19 @@ export class CourseRepo {
 
   clearRecent() {
     localStorage.setItem(RECENT_HISTORY_KEY, JSON.stringify([]));
+  }
+
+  getTournamentHistory() {
+    return JSON.parse(localStorage.getItem(TOURNAMENT_HISTORY_KEY)) ?? [];
+  }
+
+  // Each entry: { endTs, races: [{ course, connector }] }, oldest first.
+  addTournamentToHistory(entry) {
+    const history = this.getTournamentHistory();
+    history.push(entry);
+    const latest = history.slice(-TOURNAMENT_HISTORY_LIMIT);
+    localStorage.setItem(TOURNAMENT_HISTORY_KEY, JSON.stringify(latest));
+    return latest;
   }
 
   getInProgress() {

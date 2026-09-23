@@ -184,6 +184,73 @@ export function RacesTable({ courses, onReroll, onSelect, onReset }) {
   );
 }
 
+export function PastTournamentsTable({ tournaments }) {
+  if (tournaments.length == 0) {
+    return null;
+  }
+  return (
+    <TableContainer
+      component={Paper}
+      sx={{ width: "100%", margin: "auto", overflowX: "auto" }}
+    >
+      <Typography variant="h6" sx={{ p: 2 }}>
+        Past tournaments
+      </Typography>
+      <Table aria-label="past tournaments">
+        <TableHead>
+          <TableRow>
+            <TableCell>Date</TableCell>
+            {[...Array(4).keys()].map((index) => (
+              <TableCell key={index}>Race {index + 1}</TableCell>
+            ))}
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {[...tournaments].reverse().map((tournament, rowIndex) => (
+            <TableRow
+              key={tournament.endTs}
+              sx={{ backgroundColor: rowIndex % 2 == 0 ? "#fff" : "#f0f0f0" }}
+            >
+              <TableCell>
+                {new Date(tournament.endTs).toLocaleString([], {
+                  dateStyle: "medium",
+                  timeStyle: "short",
+                })}
+              </TableCell>
+              {tournament.races.map(({ course, connector }, index) => (
+                <TableCell key={index}>
+                  <Stack spacing={1} sx={{ width: 90, textAlign: "center" }}>
+                    {connector == null ? (
+                      <img
+                        src={course.img}
+                        alt={course.name}
+                        loading="lazy"
+                        style={{ borderRadius: "10px" }}
+                      />
+                    ) : (
+                      <DiagonalSplitImage
+                        topCourse={course}
+                        bottomCourse={connector}
+                      />
+                    )}
+                    <Item>
+                      <Caption variant="caption">
+                        {connector == null
+                          ? course.name
+                          : `${course.name} → ${connector.name}`}
+                      </Caption>
+                    </Item>
+                  </Stack>
+                </TableCell>
+              ))}
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+    </TableContainer>
+  );
+}
+
 function RerollButton({ onClick, text = "Reroll" }) {
   const [isAnimating, setIsAnimating] = useState(false);
   return (
@@ -219,10 +286,16 @@ function RaceSelectionCell({ course, connector, isSelected, onSelect }) {
         // alignItems="center"
         // justifyContent="flex-start"
         sx={{
+          position: "relative",
           width: 90,
           textAlign: "center",
         }}
       >
+        {isSelected == true && (
+          <Box sx={{ position: "absolute", top: 4, right: 4, zIndex: 4 }}>
+            <CheckCircleIcon fontSize="small" sx={{ color: lightGreen[500] }} />
+          </Box>
+        )}
         {connector == null && (
           <img
             src={course.img}
@@ -243,11 +316,6 @@ function RaceSelectionCell({ course, connector, isSelected, onSelect }) {
           </Button>
         )}
       </Stack>
-      {isSelected == true && (
-        <Box sx={{ position: "absolute", top: 16, right: 16, zIndex: 4 }}>
-          <CheckCircleIcon fontSize="small" sx={{ color: lightGreen[500] }} />
-        </Box>
-      )}
     </Cell>
   );
 }

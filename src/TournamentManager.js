@@ -12,6 +12,7 @@ class TournamentManager {
   #pendingResume = null;
   #isConfiguring = false;
   #listeners = new Set();
+  #pastTournaments = this.#repo.getTournamentHistory();
 
   // Might want to allow num races in tournament to be configurable but for now UI will assume 4
   begin() {
@@ -119,11 +120,26 @@ class TournamentManager {
   }
 
   end() {
-    if (this.#currentTournament == null) {
+    if (this.#currentTournament == null || this.#currentTournament.isEnded) {
       return;
     }
     this.#currentTournament.isEnded = true;
+    this.#pastTournaments = this.#repo.addTournamentToHistory({
+      endTs: Date.now(),
+      races: this.#currentTournament.courses.map((race) => {
+        const isFirst = race.isCourse1Selected !== false;
+        return {
+          course: isFirst ? race.course1 : race.course2,
+          connector: isFirst ? race.connector1 : race.connector2,
+        };
+      }),
+    });
     this.#updateSubscribers();
+  }
+
+  // Oldest first.
+  getPastTournaments() {
+    return this.#pastTournaments;
   }
 
   randomizeNextRacesOptions() {
@@ -140,7 +156,8 @@ class TournamentManager {
     if (
       (currentOptions.course1.id == course &&
         currentOptions.connector1 == null) ||
-      (currentOptions.course2.id == course && currentOptions.connector2 == null)
+      (currentOptions.course2?.id == course &&
+        currentOptions.connector2 == null)
     ) {
       this.#repo.updateRecent(course);
       this.#repo.updateSelected(course);

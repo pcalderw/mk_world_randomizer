@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { PlayersTable, RacesTable } from "./TournamentTable";
+import { PlayersTable, RacesTable, PastTournamentsTable } from "./TournamentTable";
 import { tournamentManager } from "./TournamentManager";
 import { useSyncExternalStore } from "react";
 import { DeleteConfirmButton } from "./DeleteConfirmButton";
@@ -21,6 +21,11 @@ export default function App() {
   const isConfiguring = useSyncExternalStore(
     (l) => tournamentManager.subscribe(l),
     () => tournamentManager.getIsConfiguring(),
+  );
+
+  const pastTournaments = useSyncExternalStore(
+    (l) => tournamentManager.subscribe(l),
+    () => tournamentManager.getPastTournaments(),
   );
 
   if (pendingResume != null) {
@@ -60,6 +65,7 @@ export default function App() {
       <DeleteConfirmButton
         onConfirm={() => tournamentManager.clearRecentHistory()}
       />
+      <PastTournamentsTable tournaments={pastTournaments} />
     </Stack>
   );
 }
