@@ -10,22 +10,25 @@ class TournamentManager {
   #repo = new CourseRepo();
   #currentTournament = null;
   #pendingResume = null;
-  #pendingNumPlayers = null;
+  #isConfiguring = false;
   #listeners = new Set();
 
   // Might want to allow num races in tournament to be configurable but for now UI will assume 4
-  begin(numPlayers) {
-    if (this.#currentTournament != null || this.#pendingResume != null) {
+  begin() {
+    if (
+      this.#currentTournament != null ||
+      this.#pendingResume != null ||
+      this.#isConfiguring
+    ) {
       return;
     }
     const saved = this.#repo.getInProgress();
     if (saved != null && !saved.isEnded) {
       this.#pendingResume = saved;
-      this.#pendingNumPlayers = numPlayers;
-      this.#updateSubscribers();
-      return;
+    } else {
+      this.#isConfiguring = true;
     }
-    this.#startNew(numPlayers);
+    this.#updateSubscribers();
   }
 
   // Called once the player has decided whether to resume the tournament found on load.
@@ -35,20 +38,36 @@ class TournamentManager {
     }
     this.#currentTournament = this.#pendingResume;
     this.#pendingResume = null;
-    this.#pendingNumPlayers = null;
     this.#updateSubscribers();
   }
 
   discardPending() {
-    const numPlayers = this.#pendingNumPlayers ?? this.#pendingResume?.numPlayers;
     this.#pendingResume = null;
-    this.#pendingNumPlayers = null;
     this.#repo.clearInProgress();
-    this.#startNew(numPlayers);
+    this.#isConfiguring = true;
+    this.#updateSubscribers();
   }
 
   getPendingResume() {
     return this.#pendingResume;
+  }
+
+  getIsConfiguring() {
+    return this.#isConfiguring;
+  }
+
+  getLastNumPlayers() {
+    return this.#repo.getLastNumPlayers();
+  }
+
+  // Leaves the configure state and generates the first pair of races.
+  start(numPlayers) {
+    if (!this.#isConfiguring) {
+      return;
+    }
+    this.#isConfiguring = false;
+    this.#repo.saveLastNumPlayers(numPlayers);
+    this.#startNew(numPlayers);
   }
 
   #startNew(numPlayers) {
@@ -65,10 +84,11 @@ class TournamentManager {
     this.#updateSubscribers();
   }
 
-  reset(numPlayers) {
+  reset() {
     this.#repo.clearInProgress();
     this.#currentTournament = null;
-    this.begin(numPlayers);
+    this.#isConfiguring = true;
+    this.#updateSubscribers();
   }
 
   rerollLatestRaceOptions() {
@@ -104,7 +124,6 @@ class TournamentManager {
     }
     this.#currentTournament.isEnded = true;
     this.#updateSubscribers();
-    this.#repo.clearInProgress();
   }
 
   randomizeNextRacesOptions() {
@@ -131,7 +150,7 @@ class TournamentManager {
     if (this.#currentTournament.courses.length < 4) {
       this.randomizeNextRacesOptions();
     } else {
-      this.#updateSubscribers();
+      this.end();
     }
   }
 
@@ -200,7 +219,11 @@ class TournamentManager {
   #updateSubscribers() {
     if (this.#currentTournament != null) {
       this.#currentTournament = { ...this.#currentTournament };
-      this.#repo.saveInProgress(this.#currentTournament);
+      if (this.#currentTournament.isEnded) {
+        this.#repo.clearInProgress();
+      } else {
+        this.#repo.saveInProgress(this.#currentTournament);
+      }
     }
     this.#listeners.forEach((listener) => listener());
   }
@@ -211,4 +234,4 @@ class TournamentManager {
 }
 
 export const tournamentManager = new TournamentManager();
-tournamentManager.begin(4);
+tournamentManager.begin();

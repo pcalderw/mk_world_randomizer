@@ -2,6 +2,7 @@ const SELECTED_HISTORY_KEY = "mkw_selected_courses";
 const PRESENTED_HISTORY_KEY = "mkw_presented_courses";
 const RECENT_HISTORY_KEY = "mkw_recent_courses";
 const ONGOING_TOURNAMENT_KEY = "mkw_inprogress_courses";
+const LAST_NUM_PLAYERS_KEY = "mkw_last_num_players";
 const RECENT_HISTORY_LIMIT = 15;
 
 export class CourseRepo {
@@ -62,5 +63,13 @@ export class CourseRepo {
 
   clearInProgress() {
     localStorage.removeItem(ONGOING_TOURNAMENT_KEY);
+  }
+
+  getLastNumPlayers() {
+    return JSON.parse(localStorage.getItem(LAST_NUM_PLAYERS_KEY)) ?? null;
+  }
+
+  saveLastNumPlayers(numPlayers) {
+    localStorage.setItem(LAST_NUM_PLAYERS_KEY, JSON.stringify(numPlayers));
   }
 }
