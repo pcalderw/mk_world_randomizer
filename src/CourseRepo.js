@@ -53,40 +53,11 @@ export class CourseRepo {
   }
 
   getInProgress() {
-    return (
-      JSON.parse(localStorage.getItem(PRESENTED_HISTORY_KEY)) ?? {
-        ts: Date.now(),
-        courses: [],
-      }
-    );
+    return JSON.parse(localStorage.getItem(ONGOING_TOURNAMENT_KEY)) ?? null;
   }
 
-  updateInProgressOptions(course1, connector1, course2, connector2) {
-    const currentTournament = this.getInProgress();
-    currentTournament.courses.push({
-      course1: course1,
-      connector1: connector1,
-      course2: course2,
-      connector2: connector2,
-      isCourse1Selected: null,
-    });
-    localStorage.setItem(
-      mkw_inprogress_courses,
-      JSON.stringify(currentTournament),
-    );
-  }
-
-  updateInProgressSelection(course) {
-    const currentTournament = this.getInProgress();
-    if (currentTournament.courses.length == 0) {
-      return; // Probably should error.
-    }
-    let latestOptions = currentTournament.courses.at(-1);
-    latestOptions.isCourse1Selected = latestOptions.course1 == course;
-    localStorage.setItem(
-      mkw_inprogress_courses,
-      JSON.stringify(currentTournament),
-    );
+  saveInProgress(tournament) {
+    localStorage.setItem(ONGOING_TOURNAMENT_KEY, JSON.stringify(tournament));
   }
 
   clearInProgress() {
