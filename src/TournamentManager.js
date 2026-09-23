@@ -30,11 +30,16 @@ class TournamentManager {
   }
 
   #tryResume() {
-    return false; // TODO - reset should also clear the resumable race.
+    const saved = this.#repo.getInProgress();
+    if (saved == null || saved.isEnded) {
+      return false;
+    }
+    this.#currentTournament = saved;
+    return true;
   }
 
   reset(numPlayers) {
-    // TODO clear the resumable race.
+    this.#repo.clearInProgress();
     this.#currentTournament = null;
     this.begin(numPlayers);
   }
@@ -72,6 +77,7 @@ class TournamentManager {
     }
     this.#currentTournament.isEnded = true;
     this.#updateSubscribers();
+    this.#repo.clearInProgress();
   }
 
   randomizeNextRacesOptions() {
@@ -166,6 +172,7 @@ class TournamentManager {
 
   #updateSubscribers() {
     this.#currentTournament = { ...this.#currentTournament };
+    this.#repo.saveInProgress(this.#currentTournament);
     this.#listeners.forEach((listener) => listener());
   }
 
