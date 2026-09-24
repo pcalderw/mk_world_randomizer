@@ -58,6 +58,7 @@ export default function App() {
       />
       <RacesTable
         courses={tournament.courses}
+        isEnded={tournament.isEnded}
         onSelect={(course) => tournamentManager.selectCourse(course)}
         onReroll={() => tournamentManager.rerollLatestRaceOptions()}
         onReset={() => tournamentManager.reset()}

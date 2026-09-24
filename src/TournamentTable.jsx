@@ -117,7 +117,13 @@ export function PlayersTable({ players, onReroll }) {
   );
 }
 
-export function RacesTable({ courses, onReroll, onSelect, onReset }) {
+export function RacesTable({
+  courses,
+  isEnded,
+  onReroll,
+  onSelect,
+  onReset,
+}) {
   return (
     <TableContainer
       component={Paper}
@@ -172,9 +178,10 @@ export function RacesTable({ courses, onReroll, onSelect, onReset }) {
               ></TableCell>
             )}
             <TableCell align="center">
-              {courses.length < 4 && <RerollButton onClick={onReroll} />}
-              {courses.length >= 4 && (
+              {isEnded ? (
                 <RerollButton onClick={onReset} text={"Restart"} />
+              ) : (
+                <RerollButton onClick={onReroll} />
               )}
             </TableCell>
           </TableRow>
