@@ -20,7 +20,7 @@ CI (`.github/workflows/deploy.yml`) on push to `main`: `npm ci` → `vite build`
 
 ## Architecture
 
-**Two build systems glued together.** Jekyll owns the site shell (layouts in `_layouts/`, includes in `_includes/`, page content in `index.markdown`), while Vite/React owns the actual application. `vite.config.js` sets `root: 'src'`, builds `src/main.jsx` as the entry, and emits fixed-name output (`assets/react-dist/assets/main.js`/`.css`) so `index.markdown` can reference stable filenames. `assets/react-dist/**` is committed to the repo (not gitignored) since Jekyll's build step consumes it directly — regenerate it with `npm run build:react` before a Jekyll-only build/commit.
+**Two build systems glued together.** Jekyll owns the site shell (layouts in `_layouts/`, includes in `_includes/`, page content in `index.markdown`), while Vite/React owns the actual application. `vite.config.js` sets `root: 'src'`, builds `src/main.jsx` as the entry, and emits content-hashed output (`assets/react-dist/assets/main-[hash].js`/`.css`) so browsers never load a stale bundle. A small plugin in `vite.config.js` writes the hashed names to `_data/react_assets.json`, which `index.markdown` reads via `site.data.react_assets` to build the `<script>`/`<link>` tags. `assets/react-dist/**` and `_data/react_assets.json` are committed to the repo (not gitignored) since Jekyll's build step consumes it directly — regenerate it with `npm run build:react` before a Jekyll-only build/commit.
 
 **React app root:** `src/main.jsx` mounts `App.jsx` into `<div id="root">` (defined in `index.markdown`, injected into `_layouts/default.html`).
 

@@ -39,8 +39,8 @@ export function DeleteConfirmButton({ onConfirm }) {
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            This is will allow getting repeated courses you already played (in
-            the last 15 non-connector races).
+            This will allow getting repeated courses you already played (in the
+            last 15 non-connector races).
           </DialogContentText>
         </DialogContent>
         <DialogActions>
