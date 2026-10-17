@@ -21,5 +21,18 @@ export const randomizeCoursePair = (recentHistory) => {
 };
 
 export const randomizeRacer = () => {
-  return racers[Math.floor(Math.random() * racers.length)];
+  return weightedRandomizer(racers);
 };
+
+function weightedRandomizer(data) {
+  const totalWeight = data.reduce((sum, d) => sum + (d.weight ?? 0), 0);
+
+  let roll = Math.random() * totalWeight;
+  for (const item of data) {
+    roll -= item.weight ?? 0;
+    if (roll < 0) {
+      return item;
+    }
+  }
+  return data[0]; //
+}
